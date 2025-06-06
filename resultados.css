@@ -1,0 +1,75 @@
+/* -----------------------------------------Dowload-------------------------------------------- */
+.obijeto-dowload {
+  display: flex;
+  margin-top: 100px;
+  margin-left: 100px;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.obijeto-dowload p {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.botao-download {
+  width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e0e0e0;
+  padding: 15px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  text-decoration: none;
+  color: black;
+  width: 350px;
+  border: none;
+  cursor: pointer;
+}
+
+.botao-download span {
+  margin-right: 20px;
+  white-space: nowrap;
+}
+
+.botao-download img {
+  justify-content: space-between;
+  width: 20px;
+  height: 20px;
+}
+
+.botao-download:hover {
+  background-color: #d5d5d5;
+}
+
+/* ---------------------------------Botoes Sair e Voltar------------------------------------------- */
+
+.botoes {
+  display: flex;
+  gap: 20px;
+}
+
+#id-botoes {
+  margin-left: 1250px;
+  margin-top: 90px;
+}
+
+.botoes button {
+
+  padding: 8px 28px;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.botoes button:hover {
+  transform: scale(1.1);
+}
+
+#id-volta {
+  background-color: #3165ea;
+  color: white;
+}

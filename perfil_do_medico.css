@@ -1,0 +1,76 @@
+
+
+    #borda-maior {
+        margin-top: -150px;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 16px;
+    }
+
+    .card {
+      background: #fff;
+      width: 100%;
+      max-width: 600px; 
+      border-radius: 12px;
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+      border: 2px solid black; 
+      overflow: hidden;
+    }
+
+    .top {
+      display: flex;
+      
+      flex-direction: column;
+    }
+
+    .image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .info, .experience {
+      padding: 16px;
+      border-top: 2px solid #000000;
+    }
+
+    .info-item {
+      margin-bottom: 12px;
+    }
+    .info{
+        margin-top: 10px;
+    }
+    .info-label {
+      font-weight: bold;
+      font-size: 16px;
+      color: #000000;
+    }
+
+    .info-text {
+      font-size: 17px;
+      color: #111827;
+    }
+    .experience-text {
+      font-size: 15px;
+      color: #000000;
+      line-height: 1.6;
+    }
+    @media (min-width: 768px) {
+      .top {
+        flex-direction: row;
+      }
+
+      .image {
+        width: 200px;
+        height: auto;
+      }
+
+      .info {
+        flex: 1;
+        border-top: none;
+        border-left: 1px solid #D1D5DB;
+      }
+    }

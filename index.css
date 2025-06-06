@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+body{
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #F4F9FB;
+}
+
+/*---------------------------------------------MENU-------------------------------------------- */
+
+.topbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 25px;
+}
+.menu a {
+  margin-left: 18px;
+  text-decoration: none;
+  color: #000;
+  font-size: 18px;
+}
+.divider {
+  width: 1px;
+  height: 50px;
+  background-color: #ccc;
+  margin: 0 20px;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+}
+.ola {
+  margin-right: 20px;
+  font-size: 25px;
+  font-weight: 500;
+}
+.icon-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+/*--------------------------------------IMAGEM LOGO-------------------------------------------- */
+
+.logo {
+  text-align: left;
+  height: 100px;
+  padding-left: 60px;
+  margin-top: 1px;
+  width: auto;
+}
+
+/* -----------------------------------Texto selecionar Opção----------------------------------- */
+
+.texto {
+  font-size: 40px;
+  font-weight: bold;
+  color: #6a5f5f;
+  margin-bottom: 15px;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  font-style: italic;
+  font-optical-sizing: auto;
+  font-weight: 100;
+}
+
+.container_1 {
+  display: flex;
+  flex-wrap: wrap;              
+  justify-content: center;  
+  gap: 10px;                    
+  margin-top: 40px;
+}
+
+.caixa_1 {
+  display: flex;                
+  flex-direction: column;      
+  align-items: center;          
+  text-decoration: none;      
+  background-color: #f5f5f5;   
+  border: 2px solid #ccc;      
+  border-radius: 10px;          
+  padding: 50px;               
+  width: 160px;                 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);  
+  transition: transform 0.2s, background-color 0.2s;  
+  color: #000;                 
+}
+
+.caixa_1 img {
+  width: 80px;                
+  height: 80px;                
+  margin-bottom: 10px;       
+}
+
+.caixa_1 p {
+  font-size: 16px;             
+  font-weight: bold;           
+}
+
+.caixa_1:hover {
+  transform: scale(1.05);
+}
+
+.caixa_1:hover img {
+  transform: scale(1.1);
+}
+
+.caixa_1 p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* ---------------------------------Texto de Como Funciona--------------------------------------*/
+
+.container_2 {
+  display: flex;
+  flex-wrap: wrap;             
+  justify-content: center;  
+  gap: 10px;                   
+  margin-top: 40px;
+}
+.caixa_2 {
+  display: flex;                
+  flex-direction: column;       
+  align-items: center;          
+  text-decoration: none;        
+  background-color: #f5f5f5;    
+  border: 2px solid #ccc;       
+  border-radius: 10px;          
+  padding: 35px;                
+  width: 160px;                 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+  transition: transform 0.2s, background-color 0.2s;  
+  color: #000;         
+}
+.caixa_2 h1 {
+  color: rgb(25, 52, 133);
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  margin: 0 0 10px 0;
+}
+.caixa_2 p {
+  font-size: 12px;
+  text-align: center;
+  margin: 0;
+  color: #666;
+}   
+.caixa_interna{
+  display: flex;     
+}
+.caixa_2{
+  gap: 20px;
+  width: 200px;   
+  height: auto;  
+}
+.img1{
+  width: 90px;   
+  height: auto;   
+}
+
+.caixa_2:hover {
+  transform: scale(1.05);
+}
+
+.caixa_2:hover .img1 {
+  transform: scale(1.1);
+}
+
+.caixa_2 h1 {
+  font-size: 20px;
+  margin-top: 15px;
+}
+
+.caixa_2 p {
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/*-----------------------------------------Rodapé--------------------------------------------   */
+
+.roda {
+  color: rgb(0, 0, 0);
+  margin-left: 30px;
+  margin-top: 100px;
+  display: flex;
+}
+
+
+.logo-rodape{ 
+  height: 100px;
+}
+
+.textoRodape {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;     
+  gap: 20px;               
+  padding: 20px;
+}
+
+.textoRodape a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  transition: color 0.3s;
+}
+
+.textoRodape a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+
+.textoRodape a:hover {
+  color: #ddd;                
+  text-decoration: underline;
+}
+/* -----------------------------Lista de item do perfil do usuario---------------------------------------------------- */
+
+.lista {
+  display: none;
+  position: absolute;
+  top: 60px;
+  right: 0;
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  z-index: 1000;
+  min-width: 150px;
+}
+.lista a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+}
+.icon:hover .lista {
+  display: block;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="consulta.css">
+        <link rel="stylesheet" href="faleConosco.css">
+        <link rel="stylesheet" href="resultados.css">
+        <link rel="stylesheet" href="login.css">
+    <title>Cadastre-se</title>
+
+<style>
+.grupo {
+  display: flex;
+  margin-top: 60px;
+}
+#data-nascimento{
+    margin-left: 425px;
+}
+#nome-completo-input{
+    width: 600px;
+}
+#documentos{
+    margin-left: 308px;
+    width: 200px; 
+}
+#n{
+    margin-left: 30px;
+    width: 50px;
+}
+#cep{
+     margin-left: 30px;
+    width: 150px;
+}
+#municipio{
+    margin-left: 30px;
+    width: 300px;
+}
+#endereco{
+    margin-left: 30px;
+    width: 300px;
+}
+#complemento{
+    margin-left: 30px;
+}
+.todo-grupo{
+    margin-left: 100px;
+}
+#botao-enviar-cadastro{
+    margin-top: -30px;
+    margin-left: 1100px;
+}
+.fonte-label{
+    margin-top: -25px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+#espaco-senha{
+    margin-left: 50px;
+}
+
+</style>
+    
+</head>
+<body>
+<!-----------------------------------------------MENU------------------------------------------------>
+    <header class="topbar">
+        <nav class="menu">
+            <a href="faleConosco.html">Fale Conosco</a>
+            <a href="#">Ouvidoria</a>
+        </nav>
+    </header>
+
+  <!--------------------------------------- TEXTO DE CONSULTA--------------------------------------->
+  
+  <div class="textoLogo">
+    <div class="logo">
+        <img  src="imagens/logo.png" alt="">
+    </div>
+    <h2 class="texto_" id="titulo-login">Cadastro</h2>
+  </div>
+
+<!-- -------------------------------CAIXA DE LOGIN------------------------------------------------->
+
+<!-------------- algumas configurações de style estao no arquivo faleConosco.css------------------->
+
+    <div class="todo-grupo">
+        <div class="grupo">
+            <div class="label-input">
+                <label class="fonte-label" >Nome Completo</label>
+                <input type="text" class="form-input" id="nome-completo-input">
+            </div>
+            <div class="label-input">
+                <label id="data-nascimento" class="fonte-label">Data de Nacimento</label>
+                <input type="text" class="form-input" id="data-nascimento">
+            </div>
+        </div>
+
+        <div class="grupo">
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label" >Nome da Mãe</label>
+                <input type="text" class="form-input" id="nome-completo-input">
+            </div> 
+        </div> 
+
+        <div class="grupo">
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label">CPF</label>
+                <input type="text" class="form-input" >
+            </div>
+            <div class="label-input" class="fonte-label">
+                <label id="documentos" class="fonte-label">RG</label>
+                <input type="text" class="form-input" id="documentos">
+            </div>
+            <div class="label-input" class="fonte-label">
+                <label id="documentos" class="fonte-label">Órgão Emissor</label>
+                <input type="text" class="form-input" id="documentos">
+            </div>
+        </div>
+        <div class="grupo">
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label">CEP</label>
+                <input type="text" class="form-input">
+            </div>
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label" id="municipio">Municipio</label>
+                <input type="text" class="form-input" id="municipio">
+            </div>
+        
+            <div class="label-input">
+                <label class="fonte-label" id="endereco">Endereço</label class="fonte-label">
+                <input type="text" class="form-input" id="endereco">
+            </div>
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label"  id="n">Nº</label>
+                <input type="text" class="form-input" id="n">
+            </div>
+            <div class="label-input" class="fonte-label">
+                <label class="fonte-label" id="complemento">Complemento</label>
+                <input type="text" class="form-input" id="complemento">
+            </div>
+        </div>
+        <div class="grupo">
+            <div class="label-input" class="fonte-label">
+            <label class="fonte-label">Senha</label>
+            <input type="text" class="form-input">
+            </div>
+            <div class="label-input" class="fonte-label">
+            <label class="fonte-label" id="espaco-senha">Comfirmar Senha</label>
+            <input type="text" class="form-input" id="espaco-senha">
+            </div>   
+        </div> 
+        <div class="grupo">
+            <div class="botoes" id="botao-enviar-cadastro">
+            <button class="volta" onclick="window.location.href='login.html'">Volta</button>
+            <button class="sair" id="id-enviar" onclick="window.location.href='login.html'">Enviar</button>
+        </div>
+</div>
+        
+    </div>
+</div>
+
+<div style="height: 40px;"></div>
+
+</body>
+</html>

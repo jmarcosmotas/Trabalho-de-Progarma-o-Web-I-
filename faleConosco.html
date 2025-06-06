@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="consulta.css">
+  <link rel="stylesheet" href="faleConosco.css">
+  <link rel="stylesheet" href="resultados.css">
+
+
+  <style>
+    #mensagem-sucesso {
+      display: none;
+      font-size: 30px;
+      text-align: center;
+      padding: 20px;
+      background-color: #d9d9d9;
+      color: #000000;
+      border-radius: 5px;
+      max-width: 500px;
+      margin: 20px auto;
+    }
+  </style>
+
+  <title>Fale Conosco</title>
+</head>
+
+
+<body>
+  <!----------------------------------------------- MENU------------------------------------------->
+  <header class="topbar">
+    <nav class="menu">
+      <a href="#">Fale Conosco</a>
+      <a href="#">Ouvidoria</a>
+      <a href="#">Dúvidas</a>
+    </nav>
+  </header>
+
+  <!----------------------------------TEXTO DE FALE CONOSCO---------------------------------------->
+  <!-- <div class="tela-inteira"> -->
+  <div class="textoLogo">
+    <a href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>  
+    <h2 class="texto_">Fale Conosco</h2>
+  </div>
+
+  <div class="conteiner-maior" id="id-conteiner-maior">
+    <div class="container-interno" id="id-conteiner-interno">
+      <div class="label-input">
+        <label class="form-label">NOME*:</label>
+        <input type="text" class="form-input" id="nome">
+      </div>
+      <div class="label-input">
+        <label class="form-label">G-MAIL*:</label>
+        <input type="text" class="form-input" id="email">
+      </div>
+      <div class="label-input">
+        <label class="form-label">TELEFONE:</label>
+        <input type="text" class="form-input" id="telefone">
+      </div>
+      <div class="label-input">
+        <label class="form-label">DESCREVA O QUE DESEJA NOS FALAR*:</label>
+        <input type="text" class="form-input" id="falar">
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!-------------- Algumas configuraçoes de estilo dos botoes estao sendo editada no arquivo resultado.css ----------------->
+  <div class="botoes" id="id-botoes">
+    <button class="volta" onclick="window.location.href='index.html'">Volta</button>
+    <button class="sair" id="id-enviar">Enviar</button>
+  </div>
+
+  <div style="height: 40px;"></div>
+
+  <!-- ----------------------------Mensagem de sucesso so aparece apos digitar enter--------------------------------------->
+  <div id="mensagem-sucesso">
+    <strong>Obrigado por entrar em contato conosco! </strong> Ficamos felizes, e esperamos sanar seu problema
+    ou dúvida o quanto antes. Caso precise de algo novamente, sinta-se a vontade para nos
+    contatar
+  </div>
+
+  <!-- -------------------------------------------JAVASCRITP---------------------------------------------------------------->
+
+  <!-- Quando e clicado em enviar a caixa de do fale conosco some e aparece a mensagem dizendo que foi enviado com sucesso -->
+
+  <script>
+    document.getElementById("id-enviar").addEventListener("click", function () {
+      // Esconde o formulário inteiro
+      document.getElementById("id-conteiner-maior").style.display = "none";
+      // Mostra a mensagem de sucesso
+      document.getElementById("mensagem-sucesso").style.display = "block";
+      // Altera o texto do botão para "Sair"
+      this.textContent = "Sair";
+      const divBotoes = document.getElementById("id-botoes");
+      // Exemplo: mudar para posição absoluta e deslocar para outro lugar
+      divBotoes.style.position = "absolute";
+      divBotoes.style.top = "520px"; // ajuste a distância do topo
+      divBotoes.style.left = "45px"; // ajuste a distância da esquerda
+      // Altera a função do botão para fechar ou redirecionar
+      this.onclick = function () {
+        // Exemplo: redireciona para outra página
+        window.location.href = "index.html";
+        // Ou pode ser para fechar a aba, se permitido pelo navegador:
+        // window.close();
+      };
+    });
+  </script>
+
+</body>
+
+</html>

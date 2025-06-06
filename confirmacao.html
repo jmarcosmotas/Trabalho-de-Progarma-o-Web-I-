@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="consulta.css">
+  <link rel="stylesheet" href="faleConosco.css">
+  <link rel="stylesheet" href="resultados.css">
+  <title>confimação</title>
+
+  <style>
+    #telefone {
+      width: 140px;
+    }
+    #endereco {
+      width: 400px;
+    }
+    #horario {
+      width: 90px;
+    }
+    #nome {
+      width: 400px;
+    }
+    #enderecoConsulta {
+      margin-left: 45px;
+      width: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <!----------------------------------------------- MENU------------------------------------------->
+  <header class="topbar">
+    <nav class="menu">
+      <a href="faleConosco.html">Fale Conosco</a>
+      <a href="#">Ouvidoria</a>
+      <a href="#">Dúvidas</a>
+    </nav>
+    <div class="divider"></div>
+    <div class="perfil">
+      <div class="icon">
+        <img src="imagens/login.jpg" alt="Perfil do Usuário" class="icon-img">
+        <div class="lista">
+          <a href="cadastro.html">Alterar Cadastro</a>
+          <a href="notificacao.html">Notificações</a>
+          <a href="login.html">Sair</a>
+        </div>
+      </div>
+      <span class="ola">Olá</span>
+    </div>
+  </header>
+  <!----------------------------------TEXTO DE FALE CONOSCO---------------------------------------->
+  <div class="textoLogo">
+    <a href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>  
+    <h2 class="texto_" id="comprovante">Confirmação</h2>
+  </div>
+
+  <div class="conteiner-maior" id="id-conteiner-maior">
+    <div class="container-interno" id="id-conteiner-interno">
+
+      <div class="label-input">
+        <label class="form-label">PACIENTE*:</label>
+        <input type="text" class="form-input" id="nome" value="Maria Rosana Costa Leite">
+      </div>
+
+      <div class="label-input">
+        <label class="form-label">ENDEREÇO*:</label>
+        <input type="text" class="form-input" id="endereco" value="Avenida Domingos Olimpio, Aldeota, 2098">
+      </div>
+
+      <div class="label-input">
+        <label class="form-label">TELEFONE:</label>
+        <input type="text" class="form-input" id="telefone" value="(85) 90832-03826">
+      </div>
+
+      <div class="label-exme-medico">
+        <div class="label-input">
+          <label class="form-label">TIPO:</label>
+          <input type="text" class="form-input" id="telefone" value="Neurologista">
+        </div>
+        <div class="label-input">
+          <label class="form-label">MÉDICO(A) OU ENFERMEIRO(A) RESPONSÁVEL:</label>
+          <input type="text" class="form-input" id="responsavel" value="Dr. Gustavo Silva">
+        </div>
+      </div>
+
+      <div class="label-exme-medico">
+        <div class="label-input">
+          <label class="form-label">DATA:</label>
+          <input type="text" class="form-input" id="horario" value="10/05/2025">
+        </div>
+        <div class="label-input">
+          <label class="form-label" id="enderecoConsulta">ENDEREÇO CONSULTA:</label>
+          <input type="text" class="form-input" id="enderecoConsulta" value="Avenida Aguanambi Soares, 2914">
+        </div>
+      </div>
+
+      <div class="label-input">
+        <label class="form-label">HORÁRIO:</label>
+        <input type="text" class="form-input" id="horario" value="14:00-15:00">
+      </div>
+
+    </div>
+  </div>
+  <div class="botoes" id="id-botoes">
+    <button class="volta" onclick="window.location.href='index.html'">Volta</button>
+    <button class="sair" id="id-enviar" onclick="alterarTexto()">Comfirmar</button>
+  </div>
+  <div style="height: 40px;"></div>
+  <script>
+    let confirmado = false;
+    function alterarTexto() {
+      const titulo = document.getElementById("comprovante");
+      const botao = document.getElementById('id-enviar');
+      const inputs = document.querySelectorAll('.form-input');
+      if (!confirmado) {
+        titulo.innerHTML = "Comprovante de Agendamento<br>Consulta";
+        inputs.forEach(input => {
+          input.setAttribute('readonly', true);
+          input.style.backgroundColor = '##6A5F5F';
+        });
+        botao.innerText = "Sair";
+        confirmado = true;
+      } else {
+        window.location.href = "login.html";
+      }
+    }
+  </script>
+</body>
+
+</html>

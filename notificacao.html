@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="consulta.css">
+    <link rel="stylesheet" href="faleConosco.css">
+    <link rel="stylesheet" href="resultados.css">
+    <title>Notificação</title>
+</head>
+
+<body>
+    <!----------------------------------------------- MENU ------------------------------------------->
+    <header class="topbar">
+        <nav class="menu">
+            <a href="#">Fale Conosco</a>
+            <a href="#">Ouvidoria</a>
+            <a href="#">Dúvidas</a>
+        </nav>
+    </header>
+
+    <!------------------------------ TÍTULO E LOGO ------------------------------------------------->
+    <div class="textoLogo">
+        <a href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>
+        <h2 class="texto_">Notificação</h2>
+    </div>
+
+    <!------------------------------- MENSAGENS ----------------------------------------------------->
+    <div id="notificacao">
+        <p></p>
+    </div>
+
+    <!------------------------------- SCRIPT JS ----------------------------------------------------->
+    <script>
+        const mensagens = [
+            {
+                texto: `A sua consulta foi <strong>cancelada por motivos de viagens do médico</strong>, realizamos sua <strong>realocação para dia 22/05/2025 às 15:00hrs</strong>, caso não possa nesse dia reagende no nosso site!<br>`,
+                agradecimento: "Agradecemos a compreensão.",
+                data: "07/05/2025 - 18:40"
+            },
+            {
+                texto: `O seu exame foi <strong>reagendado para o dia 18/06/2025, às 07:00</strong>. O motivo do reagendamento são <strong>questões infraestruturais do ambiente</strong>, atualmente está passando por reformas para melhor atende-lo. Caso não possa nesse dia reagende no nosso site!<br>`,
+                agradecimento: "Agradecemos a compreensão.",
+                data: "08/05/2025 - 07:30"
+            },
+            {
+                texto: `A sua consulta <strong>agendada para dia 10/05/2025 com o neurologista, está chegando!</strong> Ela será realizada no endereço: <strong>Avenida Aguanambi Soares, 2914, às 14:00, com o médico Gustavo Silva</strong>.`,
+                agradecimento: "Agradecemos a compreensão.",
+                data: "08/05/2025 - 08:00"
+            }
+        ];
+        
+        // Aplica o estilo para centralizar o conteúdo
+        const container = document.getElementById("notificacao");
+        container.style.display = "flex";
+        container.style.flexDirection = "column";
+        container.style.alignItems = "center";
+        container.style.justifyContent = "center"; 
+        container.style.minHeight = "60vh";
+        container.style.padding = "20px";
+        
+        mensagens.forEach(m => {
+            const div = document.createElement("div");
+            div.className = "mensagem";
+            div.innerHTML = `
+                <p>${m.texto}</p>
+                <div class="agradecimento">${m.agradecimento}</div>
+                <div class="data-hora">${m.data}</div>
+            `;
+            container.appendChild(div);
+        });
+    </script>
+</body>
+
+</html>

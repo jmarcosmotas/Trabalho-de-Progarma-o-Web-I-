@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="consulta.css">
+    <title>Calendario</title>
+</head>
+<body>
+   <!-------------------------------------- MENU ----------------------------------------------------->
+  <header class="topbar">
+    <nav class="menu">
+      <a href="faleConosco.html">Fale Conosco</a>
+      <a href="#">Ouvidoria</a>
+      <a href="#">Dúvidas</a>
+    </nav>
+    <div class="divider"></div>
+    <div class="perfil">
+  <div class="icon">
+    <img src="imagens/login.jpg" alt="Perfil do Usuário" class="icon-img">
+    <div class="lista">
+      <a href="cadastro.html">Alterar Cadastro</a>
+      <a href="notificacao.html">Notificações</a>
+      <a href="login.html">Sair</a>
+    </div>
+  </div>
+  <span class="ola">Olá</span>
+</div>
+  </header>
+
+<!---------------------------------------- IMAGEM DA LOGO ------------------------------------->
+<!--------------------------------------- TEXTO DE CONSULTA------------------------------------>
+  <div class="textoLogo">
+        <a href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>  
+        <h2  class="texto_" style="margin-left: 50px;">Selecione um Horário</h2>
+  </div>
+
+  <div class="tamanho-container" id="dropdown">
+    <div class="titulo" onclick="toggleDropdown()">HORÁRIOS</div>
+    <div class="lista-items">
+      <div class="item"><a href="confirmacao.html">09:00-10:00</a></div>
+      <div class="item"><a href="confirmacao.html">10:00-11:00</a></div>
+      <div class="item"><a href="confirmacao.html">11:00-12:00</a></div>
+      <div class="item"><a href="confirmacao.html">14:00-15:00</a></div>
+      <div class="item"><a href="confirmacao.html">17:00-18:00</a></div>
+      <div class="item"><a href="confirmacao.html">19:00-20:00</a></div>
+    </div>
+  </div>
+
+  <script>
+  function toggleDropdown() {
+      const container = document.getElementById('dropdown');
+      container.classList.toggle('aberto');
+  }
+</script>
+</body>
+</html>

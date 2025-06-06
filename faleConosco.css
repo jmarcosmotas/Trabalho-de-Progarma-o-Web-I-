@@ -1,0 +1,112 @@
+.textoLogo{
+    text-align: left;
+    margin-top: 9px;
+}
+.conteiner-maior {
+    border-radius: 10px;
+    margin: 0 auto; 
+    padding: 30px;
+    display: block;
+    align-items: center;
+}
+#id-conteiner-maior{
+    width: 1100px;
+    height: 480px;
+    background-color: #ebebeb;
+}
+
+.container-interno {
+    margin-top: 1px;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    
+}
+
+#id-conteiner-interno{
+    gap: 15px;
+    margin-left: 10px;
+}
+
+.label-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+}
+
+.form-input {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.input {
+  display: block; 
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#nome{
+    width: 500px;
+}
+#email{
+    width: 600px;
+}
+#telefone{
+    width: 400px;
+}
+#falar{
+    width: 700px;
+    padding: 80px;
+}
+
+#id-botoes{
+    margin-top: 30px; 
+}
+#id-enviar{
+    background-color: #2844a7;
+    color:rgb(255, 255, 255);
+};
+/* -----------------------------------Style Notificação------------------------------------------- */
+#notificacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+
+.mensagem {
+    background-color: #d9d9d9;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    width: 500px;
+    border-radius: 8px;
+}
+.mensagem strong {
+      font-weight: bold;
+    }
+.data-hora {
+    text-align: right;
+    font-size: 0.85em;
+    color: #666;
+    margin-top: 10px;
+}
+.agradecimento {
+  text-align: right;
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 10px;
+}
+.label-exme-medico{
+    display: flex;
+    gap: 150px;
+}

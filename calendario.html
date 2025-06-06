@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="consulta.css">
+    <title>Calendario</title>
+</head>
+<body>
+   <!-------------------------------------- MENU ----------------------------------------------------->
+  <header class="topbar">
+    <nav class="menu">
+      <a href="faleConosco.html">Fale Conosco</a>
+      <a href="#">Ouvidoria</a>
+      <a href="#">Dúvidas</a>
+    </nav>
+    <div class="divider"></div>
+    <div class="perfil">
+  <div class="icon">
+    <img src="imagens/login.jpg" alt="Perfil do Usuário" class="icon-img">
+    <div class="lista">
+      <a href="cadastro.html">Alterar Cadastro</a>
+      <a href="notificacao.html">Notificações</a>
+      <a href="login.html">Sair</a>
+    </div>
+  </div>
+  <span class="ola">Olá</span>
+</div>
+  </header>
+
+<!---------------------------------------- IMAGEM DA LOGO ------------------------------------->
+<!--------------------------------------- TEXTO DE CONSULTA------------------------------------>
+  <div class="textoLogo">
+      <a href="index.html"><img class="logo" src="imagens/logo.png" alt=""></a>  
+      <h2  class="texto_">Datas Disponiveis</h2>
+  </div>
+<!--------------------------------Calendario de agendamento-------------------------------------->
+<!-------------------------------Editado no arquivo consulta.css--------------------------------->
+    <div class="center">
+    <h2 class="h2-data">Junho | 2025</h2>
+    <div class="datas">
+      <table id="calendario" class="tamanho-calendario">
+        <thead>
+          <tr>
+            <th>DOM</th><th>SEG</th><th>TER</th><th>QUA</th><th>QUI</th><th>SEX</th><th>SAB</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <div class="legenda">
+    <div><span class="bolinha vermelho"></span> Dias Sem Vaga</div>
+    <div><span class="bolinha verde"></span> Dias com vaga</div>
+    <div><span class="bolinha branco"></span> Final de Semana</div>
+  </div>
+
+  <div style="height: 40px;"></div>
+  <script src="calendario.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="consulta.css">
+        <link rel="stylesheet" href="faleConosco.css">
+        <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+<!-----------------------------------------------MENU------------------------------------------------>
+    <header class="topbar">
+        <nav class="menu">
+            <a href="faleConosco.html">Fale Conosco</a>
+            <a href="#">Ouvidoria</a>
+        </nav>
+    </header>
+
+<!--------------------------------------- TEXTO DE CONSULTA--------------------------------------->
+  
+  <div class="textoLogo">
+      <img class="logo" src="imagens/logo.png" alt="">
+    <h2  class="texto_">Login</h2>
+  </div>
+
+<!-- -------------------------------CAIXA DE LOGIN------------------------------------------------->
+
+<!-------------- algumas configurações de style estao no arquivo faleConosco.css------------------->
+  
+<div class="tela-login" id="tela-login">
+        <div class="conteiner-maior" id="conteiner-maior-login">
+        <div class="container-interno" id="id-conteiner-interno-login">
+            <div class="label-input">
+                <label class="form-label" id="label-login">CPF</label>
+                <input type="text" class="form-input" id="input-login">
+            </div>
+            <div class="label-input">
+                <label class="form-label"  id="label-login">SENHA</label>
+                <input type="text" class="form-input" id="input-login">
+            </div>
+            <button class="botao-entrar" onclick="window.location.href='index.html'">Entrar</button>
+        </div>
+    </div>
+    <div class="direcionamento">
+        <a href="#" class="esqueci-senha">
+            <img src="imagens/pergunta.png" alt="Ícone" style="width:16px; height:16px; vertical-align:middle;">
+            Esqueci Minha Senha
+        </a>
+        <a href="cadastro.html" class="esqueci-senha">Meu Primeiro Acesso</a>
+    </div>
+</div>
+
+<!----------------------------------CAIXA DE RECUPERE SUA SENHA--------------------------------->
+
+<!-------------- algumas configurações de style estao no arquivo faleConosco.css------------------->
+
+
+<div class="conteiner-maior" id="tela-esqueci-senha" style="display:none;">
+    <div class="container-interno" id="id-conteiner-interno-login">
+        <div class="label-input">
+            <label class="form-label" id="label-login">NOVA SENHA</label>
+            <input type="text"class="form-input" id="input-login">
+        </div>
+        <div class="label-input">
+            <label class="form-label"  id="label-login">CONFIRMAR SENHA</label>
+            <input type="text" class="form-input" id="input-login">
+        </div>
+
+        <div class="texto-corecao">
+            <ul>
+            <li>Sua senha deve conter no mínimo 6 caracteres e no máximo 9</li><br>
+            <li>Sua senha deve conter caracteres especiais, como: /#@></li>
+            </ul>
+        </div>
+        <button class="botao-entrar" id="botao-esqueci-senha">CONFIRMAR</button>
+    </div>
+</div>
+
+<!-- -----------------------------------JAVASCRIPT-------------------------------------------- -->
+
+<!--O scriptjava e chamedo quando e clicado em esquici minha dai a caixa de de login sai e entra 
+    a caixar de esquici minha senha-->
+
+<script>
+    document.querySelector('.esqueci-senha').addEventListener('click', function(event) {
+        // event.preventDefault(); // impede navegação padrão
+        // Esconde a tela de login
+        document.getElementById('tela-login').style.display = 'none';
+        // Mostra a tela de recuperação de senha
+        document.getElementById('tela-esqueci-senha').style.display = 'block';
+        // Troca o texto do título
+        document.getElementById('titulo-login').textContent = 'Esqueci minha Senha';
+    });
+    // Voltar para tela de login ao clicar em "CONFIRMAR"
+    document.getElementById('botao-esqueci-senha').addEventListener('click', function () {
+        document.getElementById('tela-esqueci-senha').style.display = 'none';
+        document.getElementById('tela-login').style.display = 'block';
+        document.getElementById('titulo-login').textContent = 'Login Marque Fácil';
+    });
+</script>
+
+
+</body>
+</html>
